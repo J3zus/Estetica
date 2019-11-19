@@ -4,6 +4,7 @@
 int main()
 {
 	// Si lees esto, se completo exitosamente la sincronizacion see
+	// Prueba de regreso de la sincronización
 	char cadena[200];
 	int indice;
 	int contador = 0;
