@@ -3,6 +3,7 @@
 
 int main()
 {
+	// Si lees esto, se completo exitosamente la sincronizacion
 	char cadena[200];
 	int indice;
 	int contador = 0;
