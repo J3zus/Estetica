@@ -3,7 +3,7 @@
 
 int main()
 {
-	// Si lees esto, se completo exitosamente la sincronizacion
+	// Si lees esto, se completo exitosamente la sincronizacion see
 	char cadena[200];
 	int indice;
 	int contador = 0;
