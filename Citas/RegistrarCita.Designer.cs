@@ -66,7 +66,14 @@
             this.RdbNo = new System.Windows.Forms.RadioButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.wrapperhead.SuspendLayout();
             this.PanelIzq.SuspendLayout();
             this.panelPoS.SuspendLayout();
@@ -148,7 +155,14 @@
             // panelCita
             // 
             this.panelCita.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelCita.Controls.Add(this.textBox3);
+            this.panelCita.Controls.Add(this.textBox4);
+            this.panelCita.Controls.Add(this.textBox5);
+            this.panelCita.Controls.Add(this.textBox6);
             this.panelCita.Controls.Add(this.label11);
+            this.panelCita.Controls.Add(this.label12);
+            this.panelCita.Controls.Add(this.label13);
+            this.panelCita.Controls.Add(this.label14);
             this.panelCita.Controls.Add(this.groupBox2);
             this.panelCita.Controls.Add(this.label2);
             this.panelCita.Location = new System.Drawing.Point(197, 58);
@@ -238,9 +252,9 @@
             this.panelCliente.Controls.Add(this.label7);
             this.panelCliente.Controls.Add(this.label6);
             this.panelCliente.Controls.Add(this.label4);
-            this.panelCliente.Location = new System.Drawing.Point(206, 64);
+            this.panelCliente.Location = new System.Drawing.Point(605, 86);
             this.panelCliente.Name = "panelCliente";
-            this.panelCliente.Size = new System.Drawing.Size(251, 115);
+            this.panelCliente.Size = new System.Drawing.Size(201, 75);
             this.panelCliente.TabIndex = 2;
             this.panelCliente.Visible = false;
             // 
@@ -439,7 +453,7 @@
             this.groupBox2.Controls.Add(this.RdbSi);
             this.groupBox2.Location = new System.Drawing.Point(22, 48);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(508, 44);
+            this.groupBox2.Size = new System.Drawing.Size(625, 44);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tiene membresia ?";
@@ -447,9 +461,10 @@
             // RdbSi
             // 
             this.RdbSi.AutoSize = true;
+            this.RdbSi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RdbSi.Location = new System.Drawing.Point(11, 19);
             this.RdbSi.Name = "RdbSi";
-            this.RdbSi.Size = new System.Drawing.Size(34, 17);
+            this.RdbSi.Size = new System.Drawing.Size(41, 24);
             this.RdbSi.TabIndex = 0;
             this.RdbSi.TabStop = true;
             this.RdbSi.Text = "Si";
@@ -458,9 +473,10 @@
             // RdbNo
             // 
             this.RdbNo.AutoSize = true;
+            this.RdbNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RdbNo.Location = new System.Drawing.Point(95, 19);
             this.RdbNo.Name = "RdbNo";
-            this.RdbNo.Size = new System.Drawing.Size(39, 17);
+            this.RdbNo.Size = new System.Drawing.Size(47, 24);
             this.RdbNo.TabIndex = 1;
             this.RdbNo.TabStop = true;
             this.RdbNo.Text = "No";
@@ -468,30 +484,94 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(340, 16);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(355, 15);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(157, 20);
+            this.textBox2.Size = new System.Drawing.Size(157, 22);
             this.textBox2.TabIndex = 2;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(244, 17);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 16);
+            this.label9.Size = new System.Drawing.Size(105, 20);
             this.label9.TabIndex = 3;
             this.label9.Text = "Ingrese su ID";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(22, 246);
+            this.textBox3.MaxLength = 10;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(326, 22);
+            this.textBox3.TabIndex = 17;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(22, 179);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(326, 22);
+            this.textBox4.TabIndex = 16;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(447, 103);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(266, 22);
+            this.textBox5.TabIndex = 15;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(86, 109);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(266, 22);
+            this.textBox6.TabIndex = 14;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(19, 103);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(19, 223);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 18);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Nombre";
+            this.label11.Size = new System.Drawing.Size(71, 20);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "Telefono";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(19, 156);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(53, 20);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "E-Mail";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(368, 111);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(73, 20);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Apellidos";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(19, 112);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(65, 20);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Nombre";
             // 
             // RegistrarCita
             // 
@@ -560,12 +640,19 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label LblMsgResultado;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.RadioButton RdbNo;
         private System.Windows.Forms.RadioButton RdbSi;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
