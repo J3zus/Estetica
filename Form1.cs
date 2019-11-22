@@ -20,5 +20,10 @@ namespace Estetica
         {
             Application.Exit();
         }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
