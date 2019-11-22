@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Estetica.Citas
 {
@@ -65,6 +66,35 @@ namespace Estetica.Citas
             panelCita.Visible = false;
             panelCliente.Visible = false;
             panelPoS.Visible = false;
+        }
+
+        private void TxtTelefono_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsNumber(e.KeyChar) &&
+               e.KeyChar != Convert.ToChar(Keys.Back))
+            {
+                e.Handled = true;
+            }
+
+            if (TxtTelefono.Text.Trim().Length != 9)
+            {
+                LblTelefonoError.Text = "El Teléfono debe tener 10 dígitos";
+            }
+            else{
+                LblTelefonoError.Text = "";
+            }
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
