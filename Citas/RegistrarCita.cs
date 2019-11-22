@@ -58,5 +58,13 @@ namespace Estetica.Citas
             panelCliente.Visible = false;
             panelPoS.Visible = false;
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PanelPrinc.Visible = true;
+            panelCita.Visible = false;
+            panelCliente.Visible = false;
+            panelPoS.Visible = false;
+        }
     }
 }
