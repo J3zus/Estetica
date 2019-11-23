@@ -96,5 +96,43 @@ namespace Estetica.Citas
         {
 
         }
+
+        private void RdbSi_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtIdCliente.Text = "";
+            TxtIdCliente.Enabled = true;
+        }
+
+        private void RdbNo_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtIdCliente.Text = "Visita";
+            TxtIdCliente.Enabled = false;
+        }
+
+        private void TxtIdCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsNumber(e.KeyChar) &&
+               e.KeyChar != Convert.ToChar(Keys.Back))
+            {
+                e.Handled = true;
+            }
+
+            if (TxtTelefono.Text.Trim().Length != 9)
+            {
+                LblTelefonoError.Text = "El Teléfono debe tener 10 dígitos";
+            }
+            else
+            {
+                LblTelefonoError.Text = "";
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            PanelPrinc.Visible = true;
+            panelCita.Visible = false;
+            panelCliente.Visible = false;
+            panelPoS.Visible = false;
+        }
     }
 }
