@@ -134,5 +134,13 @@ namespace Estetica.Citas
             panelCliente.Visible = false;
             panelPoS.Visible = false;
         }
+
+        private void BtnCancelPro_Click(object sender, EventArgs e)
+        {
+            PanelPrinc.Visible = true;
+            panelCita.Visible = false;
+            panelCliente.Visible = false;
+            panelPoS.Visible = false;
+        }
     }
 }

@@ -10,20 +10,15 @@ namespace Estetica
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Citas.RegistrarCita formCitas = new Citas.RegistrarCita();
-            formCitas.ShowDialog();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void Label4_Click(object sender, EventArgs e)
+        private void TsbCCP_Click(object sender, EventArgs e)
         {
-
+            Citas.RegistrarCita formCitas = new Citas.RegistrarCita();
+            formCitas.ShowDialog();
         }
     }
 }

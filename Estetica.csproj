@@ -91,5 +91,20 @@
   <ItemGroup>
     <None Include="Resources\Close Window_ 2 48px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Note Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings 1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
