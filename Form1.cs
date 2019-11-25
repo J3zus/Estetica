@@ -20,5 +20,6 @@ namespace Estetica
             Citas.RegistrarCita formCitas = new Citas.RegistrarCita();
             formCitas.ShowDialog();
         }
+
     }
 }
