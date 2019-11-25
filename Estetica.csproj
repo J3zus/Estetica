@@ -51,19 +51,46 @@
     <Compile Include="Citas\RegistrarCita.Designer.cs">
       <DependentUpon>RegistrarCita.cs</DependentUpon>
     </Compile>
+    <Compile Include="Empleados\Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados\VentanaAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\VentanaAdministrador.Designer.cs">
+      <DependentUpon>VentanaAdministrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventario\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Citas\RegistrarCita.resx">
       <DependentUpon>RegistrarCita.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Empleados\Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados\VentanaAdministrador.resx">
+      <DependentUpon>VentanaAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

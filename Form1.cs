@@ -21,5 +21,18 @@ namespace Estetica
             formCitas.ShowDialog();
         }
 
+        private void TsbInventario_Click(object sender, EventArgs e)
+        {
+            Inventario.Inventario formInventario = new Inventario.Inventario();
+            this.Hide();
+            formInventario.ShowDialog();
+        }
+
+        private void TsbEmpleados_Click(object sender, EventArgs e)
+        {
+            Empleados.VentanaAdministrador formEmpleados = new Empleados.VentanaAdministrador();
+            this.Hide();
+            formEmpleados.ShowDialog();
+        }
     }
 }

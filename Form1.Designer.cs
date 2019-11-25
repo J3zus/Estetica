@@ -30,10 +30,6 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.TsbCCP = new System.Windows.Forms.ToolStripButton();
-            this.TsbInventario = new System.Windows.Forms.ToolStripButton();
-            this.TsbEmpleados = new System.Windows.Forms.ToolStripButton();
-            this.TsbAjustes = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,6 +37,10 @@
             this.LblNomUsu = new System.Windows.Forms.Label();
             this.LblApellidoUsu = new System.Windows.Forms.Label();
             this.LblTelUsu = new System.Windows.Forms.Label();
+            this.TsbCCP = new System.Windows.Forms.ToolStripButton();
+            this.TsbInventario = new System.Windows.Forms.ToolStripButton();
+            this.TsbEmpleados = new System.Windows.Forms.ToolStripButton();
+            this.TsbAjustes = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -68,44 +68,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(810, 36);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // TsbCCP
-            // 
-            this.TsbCCP.Image = global::Estetica.Properties.Resources.notification_add;
-            this.TsbCCP.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.TsbCCP.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TsbCCP.Name = "TsbCCP";
-            this.TsbCCP.Size = new System.Drawing.Size(129, 33);
-            this.TsbCCP.Text = "Clientes/Citas/Productos";
-            this.TsbCCP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.TsbCCP.Click += new System.EventHandler(this.TsbCCP_Click);
-            // 
-            // TsbInventario
-            // 
-            this.TsbInventario.Image = global::Estetica.Properties.Resources.Note_Book;
-            this.TsbInventario.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TsbInventario.Name = "TsbInventario";
-            this.TsbInventario.Size = new System.Drawing.Size(61, 33);
-            this.TsbInventario.Text = "Inventario";
-            this.TsbInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // TsbEmpleados
-            // 
-            this.TsbEmpleados.Image = global::Estetica.Properties.Resources.Users_2;
-            this.TsbEmpleados.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TsbEmpleados.Name = "TsbEmpleados";
-            this.TsbEmpleados.Size = new System.Drawing.Size(62, 33);
-            this.TsbEmpleados.Text = "Empleados";
-            this.TsbEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // TsbAjustes
-            // 
-            this.TsbAjustes.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.TsbAjustes.Image = global::Estetica.Properties.Resources.Settings_1;
-            this.TsbAjustes.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TsbAjustes.Name = "TsbAjustes";
-            this.TsbAjustes.Size = new System.Drawing.Size(63, 33);
-            this.TsbAjustes.Text = "Ajustes";
             // 
             // groupBox1
             // 
@@ -176,6 +138,46 @@
             this.LblTelUsu.Size = new System.Drawing.Size(85, 13);
             this.LblTelUsu.TabIndex = 5;
             this.LblTelUsu.Text = "TelefonoUsuario";
+            // 
+            // TsbCCP
+            // 
+            this.TsbCCP.Image = global::Estetica.Properties.Resources.notification_add;
+            this.TsbCCP.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.TsbCCP.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbCCP.Name = "TsbCCP";
+            this.TsbCCP.Size = new System.Drawing.Size(129, 33);
+            this.TsbCCP.Text = "Clientes/Citas/Productos";
+            this.TsbCCP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TsbCCP.Click += new System.EventHandler(this.TsbCCP_Click);
+            // 
+            // TsbInventario
+            // 
+            this.TsbInventario.Image = global::Estetica.Properties.Resources.Note_Book;
+            this.TsbInventario.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbInventario.Name = "TsbInventario";
+            this.TsbInventario.Size = new System.Drawing.Size(61, 33);
+            this.TsbInventario.Text = "Inventario";
+            this.TsbInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TsbInventario.Click += new System.EventHandler(this.TsbInventario_Click);
+            // 
+            // TsbEmpleados
+            // 
+            this.TsbEmpleados.Image = global::Estetica.Properties.Resources.Users_2;
+            this.TsbEmpleados.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbEmpleados.Name = "TsbEmpleados";
+            this.TsbEmpleados.Size = new System.Drawing.Size(62, 33);
+            this.TsbEmpleados.Text = "Empleados";
+            this.TsbEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TsbEmpleados.Click += new System.EventHandler(this.TsbEmpleados_Click);
+            // 
+            // TsbAjustes
+            // 
+            this.TsbAjustes.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.TsbAjustes.Image = global::Estetica.Properties.Resources.Settings_1;
+            this.TsbAjustes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbAjustes.Name = "TsbAjustes";
+            this.TsbAjustes.Size = new System.Drawing.Size(63, 33);
+            this.TsbAjustes.Text = "Ajustes";
             // 
             // Form1
             // 
