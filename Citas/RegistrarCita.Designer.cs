@@ -33,9 +33,6 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.PanelIzq = new System.Windows.Forms.Panel();
-            this.BtnCliente = new System.Windows.Forms.Button();
-            this.BtnPoS = new System.Windows.Forms.Button();
-            this.BtnCita = new System.Windows.Forms.Button();
             this.panelCita = new System.Windows.Forms.Panel();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.BtnAceptar = new System.Windows.Forms.Button();
@@ -76,6 +73,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.BtnCliente = new System.Windows.Forms.Button();
+            this.BtnPoS = new System.Windows.Forms.Button();
+            this.BtnCita = new System.Windows.Forms.Button();
             this.panelPoS = new System.Windows.Forms.Panel();
             this.BtnCancelPro = new System.Windows.Forms.Button();
             this.BtnAceptarRegPro = new System.Windows.Forms.Button();
@@ -147,51 +147,6 @@
             this.PanelIzq.Name = "PanelIzq";
             this.PanelIzq.Size = new System.Drawing.Size(200, 592);
             this.PanelIzq.TabIndex = 2;
-            // 
-            // BtnCliente
-            // 
-            this.BtnCliente.BackColor = System.Drawing.Color.DarkGray;
-            this.BtnCliente.FlatAppearance.BorderSize = 0;
-            this.BtnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCliente.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnCliente.Location = new System.Drawing.Point(0, 64);
-            this.BtnCliente.Name = "BtnCliente";
-            this.BtnCliente.Size = new System.Drawing.Size(200, 67);
-            this.BtnCliente.TabIndex = 1;
-            this.BtnCliente.Text = "Cliente";
-            this.BtnCliente.UseVisualStyleBackColor = false;
-            this.BtnCliente.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // BtnPoS
-            // 
-            this.BtnPoS.BackColor = System.Drawing.Color.DarkGray;
-            this.BtnPoS.FlatAppearance.BorderSize = 0;
-            this.BtnPoS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPoS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPoS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnPoS.Location = new System.Drawing.Point(0, 128);
-            this.BtnPoS.Name = "BtnPoS";
-            this.BtnPoS.Size = new System.Drawing.Size(200, 67);
-            this.BtnPoS.TabIndex = 2;
-            this.BtnPoS.Text = "Producto/Servicio";
-            this.BtnPoS.UseVisualStyleBackColor = false;
-            this.BtnPoS.Click += new System.EventHandler(this.BtnPoS_Click);
-            // 
-            // BtnCita
-            // 
-            this.BtnCita.BackColor = System.Drawing.Color.DarkGray;
-            this.BtnCita.FlatAppearance.BorderSize = 0;
-            this.BtnCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCita.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnCita.Location = new System.Drawing.Point(0, 0);
-            this.BtnCita.Name = "BtnCita";
-            this.BtnCita.Size = new System.Drawing.Size(200, 67);
-            this.BtnCita.TabIndex = 0;
-            this.BtnCita.Text = "Cita";
-            this.BtnCita.UseVisualStyleBackColor = false;
-            this.BtnCita.Click += new System.EventHandler(this.BtnCita_Click);
             // 
             // panelCita
             // 
@@ -617,6 +572,51 @@
             this.label4.Size = new System.Drawing.Size(79, 24);
             this.label4.TabIndex = 0;
             this.label4.Text = "Nombre";
+            // 
+            // BtnCliente
+            // 
+            this.BtnCliente.BackColor = System.Drawing.Color.DarkGray;
+            this.BtnCliente.FlatAppearance.BorderSize = 0;
+            this.BtnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCliente.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnCliente.Location = new System.Drawing.Point(0, 64);
+            this.BtnCliente.Name = "BtnCliente";
+            this.BtnCliente.Size = new System.Drawing.Size(200, 67);
+            this.BtnCliente.TabIndex = 1;
+            this.BtnCliente.Text = "Cliente";
+            this.BtnCliente.UseVisualStyleBackColor = false;
+            this.BtnCliente.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // BtnPoS
+            // 
+            this.BtnPoS.BackColor = System.Drawing.Color.DarkGray;
+            this.BtnPoS.FlatAppearance.BorderSize = 0;
+            this.BtnPoS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPoS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPoS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnPoS.Location = new System.Drawing.Point(0, 128);
+            this.BtnPoS.Name = "BtnPoS";
+            this.BtnPoS.Size = new System.Drawing.Size(200, 67);
+            this.BtnPoS.TabIndex = 2;
+            this.BtnPoS.Text = "Producto/Servicio";
+            this.BtnPoS.UseVisualStyleBackColor = false;
+            this.BtnPoS.Click += new System.EventHandler(this.BtnPoS_Click);
+            // 
+            // BtnCita
+            // 
+            this.BtnCita.BackColor = System.Drawing.Color.DarkGray;
+            this.BtnCita.FlatAppearance.BorderSize = 0;
+            this.BtnCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCita.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnCita.Location = new System.Drawing.Point(0, 0);
+            this.BtnCita.Name = "BtnCita";
+            this.BtnCita.Size = new System.Drawing.Size(200, 67);
+            this.BtnCita.TabIndex = 0;
+            this.BtnCita.Text = "Cita";
+            this.BtnCita.UseVisualStyleBackColor = false;
+            this.BtnCita.Click += new System.EventHandler(this.BtnCita_Click);
             // 
             // panelPoS
             // 

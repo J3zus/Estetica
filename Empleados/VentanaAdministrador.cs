@@ -27,7 +27,8 @@ namespace Estetica.Empleados
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
             Empleados formEmpleados = new Empleados();
-            formEmpleados.Show();
+            formEmpleados.ShowDialog();
+            this.Hide();
         }
     }
 }

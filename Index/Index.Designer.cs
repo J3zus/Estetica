@@ -35,6 +35,9 @@
             this.LblBienvenida = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PLateralIzq = new System.Windows.Forms.Panel();
+            this.BtnProductos = new System.Windows.Forms.Button();
+            this.BtnClientes = new System.Windows.Forms.Button();
+            this.BtnCsesion = new System.Windows.Forms.Button();
             this.PanelInventario = new System.Windows.Forms.Panel();
             this.BtnSeleccionar = new System.Windows.Forms.Button();
             this.TxtIdBusqueda = new System.Windows.Forms.TextBox();
@@ -46,6 +49,7 @@
             this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panelPoS = new System.Windows.Forms.Panel();
+            this.CbTipo = new System.Windows.Forms.ComboBox();
             this.BtnCancelPro = new System.Windows.Forms.Button();
             this.BtnAceptarRegPro = new System.Windows.Forms.Button();
             this.TxtProveedorProd = new System.Windows.Forms.TextBox();
@@ -58,9 +62,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.BtnProductos = new System.Windows.Forms.Button();
-            this.BtnClientes = new System.Windows.Forms.Button();
-            this.BtnCsesion = new System.Windows.Forms.Button();
             this.panelCliente = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.LblMsgResultado = new System.Windows.Forms.Label();
@@ -101,7 +102,6 @@
             this.RdbNo = new System.Windows.Forms.RadioButton();
             this.RdbSi = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.CbTipo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PLateralIzq.SuspendLayout();
@@ -207,6 +207,51 @@
             this.PLateralIzq.Name = "PLateralIzq";
             this.PLateralIzq.Size = new System.Drawing.Size(200, 565);
             this.PLateralIzq.TabIndex = 5;
+            // 
+            // BtnProductos
+            // 
+            this.BtnProductos.BackColor = System.Drawing.Color.Indigo;
+            this.BtnProductos.FlatAppearance.BorderSize = 0;
+            this.BtnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnProductos.ForeColor = System.Drawing.Color.White;
+            this.BtnProductos.Location = new System.Drawing.Point(0, 128);
+            this.BtnProductos.Name = "BtnProductos";
+            this.BtnProductos.Size = new System.Drawing.Size(200, 64);
+            this.BtnProductos.TabIndex = 5;
+            this.BtnProductos.Text = "Productos";
+            this.BtnProductos.UseVisualStyleBackColor = false;
+            this.BtnProductos.Click += new System.EventHandler(this.BtnProductos_Click);
+            // 
+            // BtnClientes
+            // 
+            this.BtnClientes.BackColor = System.Drawing.Color.Indigo;
+            this.BtnClientes.FlatAppearance.BorderSize = 0;
+            this.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClientes.ForeColor = System.Drawing.Color.White;
+            this.BtnClientes.Location = new System.Drawing.Point(0, 64);
+            this.BtnClientes.Name = "BtnClientes";
+            this.BtnClientes.Size = new System.Drawing.Size(200, 64);
+            this.BtnClientes.TabIndex = 4;
+            this.BtnClientes.Text = "Clientes";
+            this.BtnClientes.UseVisualStyleBackColor = false;
+            this.BtnClientes.Click += new System.EventHandler(this.BtnClientes_Click);
+            // 
+            // BtnCsesion
+            // 
+            this.BtnCsesion.BackColor = System.Drawing.Color.Indigo;
+            this.BtnCsesion.FlatAppearance.BorderSize = 0;
+            this.BtnCsesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCsesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCsesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnCsesion.Location = new System.Drawing.Point(0, 505);
+            this.BtnCsesion.Name = "BtnCsesion";
+            this.BtnCsesion.Size = new System.Drawing.Size(200, 60);
+            this.BtnCsesion.TabIndex = 3;
+            this.BtnCsesion.Text = "Log out";
+            this.BtnCsesion.UseVisualStyleBackColor = false;
+            this.BtnCsesion.Click += new System.EventHandler(this.BtnCsesion_Click);
             // 
             // PanelInventario
             // 
@@ -340,6 +385,18 @@
             this.panelPoS.TabIndex = 8;
             this.panelPoS.Visible = false;
             // 
+            // CbTipo
+            // 
+            this.CbTipo.FormattingEnabled = true;
+            this.CbTipo.Items.AddRange(new object[] {
+            "Servicio",
+            "Producto",
+            "Utensilio"});
+            this.CbTipo.Location = new System.Drawing.Point(24, 290);
+            this.CbTipo.Name = "CbTipo";
+            this.CbTipo.Size = new System.Drawing.Size(121, 21);
+            this.CbTipo.TabIndex = 13;
+            // 
             // BtnCancelPro
             // 
             this.BtnCancelPro.BackColor = System.Drawing.Color.Indigo;
@@ -451,51 +508,6 @@
             this.label5.Size = new System.Drawing.Size(123, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Panel Producto/Servicio";
-            // 
-            // BtnProductos
-            // 
-            this.BtnProductos.BackColor = System.Drawing.Color.Indigo;
-            this.BtnProductos.FlatAppearance.BorderSize = 0;
-            this.BtnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnProductos.ForeColor = System.Drawing.Color.White;
-            this.BtnProductos.Location = new System.Drawing.Point(0, 128);
-            this.BtnProductos.Name = "BtnProductos";
-            this.BtnProductos.Size = new System.Drawing.Size(200, 64);
-            this.BtnProductos.TabIndex = 5;
-            this.BtnProductos.Text = "Productos";
-            this.BtnProductos.UseVisualStyleBackColor = false;
-            this.BtnProductos.Click += new System.EventHandler(this.BtnProductos_Click);
-            // 
-            // BtnClientes
-            // 
-            this.BtnClientes.BackColor = System.Drawing.Color.Indigo;
-            this.BtnClientes.FlatAppearance.BorderSize = 0;
-            this.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClientes.ForeColor = System.Drawing.Color.White;
-            this.BtnClientes.Location = new System.Drawing.Point(0, 64);
-            this.BtnClientes.Name = "BtnClientes";
-            this.BtnClientes.Size = new System.Drawing.Size(200, 64);
-            this.BtnClientes.TabIndex = 4;
-            this.BtnClientes.Text = "Clientes";
-            this.BtnClientes.UseVisualStyleBackColor = false;
-            this.BtnClientes.Click += new System.EventHandler(this.BtnClientes_Click);
-            // 
-            // BtnCsesion
-            // 
-            this.BtnCsesion.BackColor = System.Drawing.Color.Indigo;
-            this.BtnCsesion.FlatAppearance.BorderSize = 0;
-            this.BtnCsesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCsesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCsesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnCsesion.Location = new System.Drawing.Point(0, 505);
-            this.BtnCsesion.Name = "BtnCsesion";
-            this.BtnCsesion.Size = new System.Drawing.Size(200, 60);
-            this.BtnCsesion.TabIndex = 3;
-            this.BtnCsesion.Text = "Log out";
-            this.BtnCsesion.UseVisualStyleBackColor = false;
-            this.BtnCsesion.Click += new System.EventHandler(this.BtnCsesion_Click);
             // 
             // panelCliente
             // 
@@ -932,18 +944,6 @@
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Registrar Cita";
-            // 
-            // CbTipo
-            // 
-            this.CbTipo.FormattingEnabled = true;
-            this.CbTipo.Items.AddRange(new object[] {
-            "Servicio",
-            "Producto",
-            "Utensilio"});
-            this.CbTipo.Location = new System.Drawing.Point(24, 290);
-            this.CbTipo.Name = "CbTipo";
-            this.CbTipo.Size = new System.Drawing.Size(121, 21);
-            this.CbTipo.TabIndex = 13;
             // 
             // Index
             // 
