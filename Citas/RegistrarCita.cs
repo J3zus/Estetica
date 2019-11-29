@@ -25,7 +25,7 @@ namespace Estetica.Citas
 
         private void button3_Click(object sender, EventArgs e)
         {
-            PanelPrinc.Visible = false;
+           // PanelPrinc.Visible = false;
             panelCita.Visible = false;
             panelCliente.Visible = true;
             panelPoS.Visible = false;
@@ -38,7 +38,7 @@ namespace Estetica.Citas
 
         private void BtnCita_Click(object sender, EventArgs e)
         {
-            PanelPrinc.Visible = false;
+            
             panelCita.Visible = true;
             panelCliente.Visible = false;
             panelPoS.Visible = false;
@@ -46,7 +46,7 @@ namespace Estetica.Citas
 
         private void BtnPoS_Click(object sender, EventArgs e)
         {
-            PanelPrinc.Visible = false;
+            
             panelCita.Visible = false;
             panelCliente.Visible = false;
             panelPoS.Visible = true;
@@ -54,7 +54,7 @@ namespace Estetica.Citas
 
         private void label1_Click(object sender, EventArgs e)
         {
-            PanelPrinc.Visible = true;
+            
             panelCita.Visible = false;
             panelCliente.Visible = false;
             panelPoS.Visible = false;
@@ -62,7 +62,7 @@ namespace Estetica.Citas
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            PanelPrinc.Visible = true;
+            
             panelCita.Visible = false;
             panelCliente.Visible = false;
             panelPoS.Visible = false;
@@ -129,7 +129,7 @@ namespace Estetica.Citas
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            PanelPrinc.Visible = true;
+            
             panelCita.Visible = false;
             panelCliente.Visible = false;
             panelPoS.Visible = false;
@@ -137,10 +137,15 @@ namespace Estetica.Citas
 
         private void BtnCancelPro_Click(object sender, EventArgs e)
         {
-            PanelPrinc.Visible = true;
+            
             panelCita.Visible = false;
             panelCliente.Visible = false;
             panelPoS.Visible = false;
+        }
+
+        private void TxtIdCliente_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

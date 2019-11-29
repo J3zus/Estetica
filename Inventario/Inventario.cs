@@ -19,9 +19,10 @@ namespace Estetica.Inventario
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            Form1 formMain = new Form1();
-            formMain.Show();
+            Index.Index formIndex = new Index.Index();
+            formIndex.Show();
             this.Close();
+
         }
     }
 }

@@ -19,5 +19,19 @@ namespace Estetica
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Index.Index formIndex = new Index.Index();
+
+            formIndex.Show();
+            this.Hide();
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

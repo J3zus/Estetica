@@ -17,11 +17,17 @@ namespace Estetica.Empleados
             InitializeComponent();
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        private void PbSalir_Click(object sender, EventArgs e)
         {
-            Form1 formMain = new Form1();
+            Index.Index formIndex = new Index.Index();
+            formIndex.Show();
             this.Close();
-            formMain.Show();
+        }
+
+        private void BtnAceptar_Click(object sender, EventArgs e)
+        {
+            Empleados formEmpleados = new Empleados();
+            formEmpleados.Show();
         }
     }
 }
