@@ -17,13 +17,6 @@ namespace Estetica.Empleados
             InitializeComponent();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            Index.Index formIndex = new Index.Index();
-            formIndex.Show();
-            this.Close();
-        }
-
         private void PBsalir_Click(object sender, EventArgs e)
         {
             Index.Index formIndex = new Index.Index();

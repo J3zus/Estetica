@@ -145,6 +145,7 @@ namespace Estetica.Index
                 Form1 objLogin = new Form1();
                 objLogin.Show();
                 this.Close();
+                this.Hide();
             }
         }
     }
