@@ -608,7 +608,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Estetica.Properties.Resources.Tgold;
-            this.pictureBox4.Location = new System.Drawing.Point(134, 234);
+            this.pictureBox4.Location = new System.Drawing.Point(134, 243);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(145, 89);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
