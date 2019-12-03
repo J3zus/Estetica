@@ -143,16 +143,6 @@
     <None Include="Resources\Settings 1.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{2ca5f564-df4e-4493-8dd1-8f3c8df41774}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{6bec181b-8231-4649-913c-832ad095d678}</Project>
-      <Name>Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\login1.png" />
   </ItemGroup>
   <ItemGroup>
