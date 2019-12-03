@@ -111,6 +111,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PLateralIzq.SuspendLayout();
@@ -785,6 +786,7 @@
             // panelCliente
             // 
             this.panelCliente.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelCliente.Controls.Add(this.label25);
             this.panelCliente.Controls.Add(this.BtnEditar);
             this.panelCliente.Controls.Add(this.TxIdRegCliente);
             this.panelCliente.Controls.Add(this.label23);
@@ -1053,6 +1055,15 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Nombre";
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(155, 9);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(66, 20);
+            this.label25.TabIndex = 25;
+            this.label25.Text = "Prueba";
+            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1177,5 +1188,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
     }
 }
