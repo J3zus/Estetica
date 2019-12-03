@@ -1058,11 +1058,11 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(155, 9);
+            this.label25.Location = new System.Drawing.Point(185, 31);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(66, 20);
+            this.label25.Size = new System.Drawing.Size(76, 20);
             this.label25.TabIndex = 25;
-            this.label25.Text = "Prueba";
+            this.label25.Text = "Prueba2";
             // 
             // Index
             // 
